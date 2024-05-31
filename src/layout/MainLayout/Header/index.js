@@ -8,7 +8,7 @@ import { Box, Grid, IconButton } from '@mui/material';
 // project import
 import SearchSection from './SearchSection';
 import ProfileSection from './ProfileSection';
-import NotificationSection from './NotificationSection';
+//import NotificationSection from './NotificationSection';
 import { drawerWidth } from 'config.js';
 
 // assets
@@ -47,7 +47,6 @@ const Header = ({ drawerToggle }) => {
       </Box>
       <Box sx={{ flexGrow: 1 }} />
       <SearchSection theme="light" />
-      <NotificationSection />
       <ProfileSection />
     </>
   );

@@ -219,7 +219,7 @@ export default {
         }
       ]
     },
-    {
+    /*{
       id: 'utils',
       title: 'Utils',
       type: 'group',
@@ -242,7 +242,7 @@ export default {
           icon: icons['FormatColorTextOutlinedIcon']
         }
       ]
-    },
+    },*/
     {
       id: 'support',
       title: 'Soporte',
