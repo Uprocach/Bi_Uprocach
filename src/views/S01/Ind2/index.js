@@ -6,17 +6,16 @@ import { Grid } from '@mui/material';
 // project import
 import { gridSpacing } from 'config.js';
 
-// ==============================|| D01-Indicador1 ||============================== //
+// ==============================|| S01-Indicador2 ||============================== //
 
-const Indicador1 = () => {
+const Indicador2 = () => {
   return (
     <>
       <Grid container spacing={gridSpacing}>
         <Grid item xs={12}>
           <div style={{ width: '100%', height: '100vh' }}>
             <iframe
-              //Cambiar link del Iframe
-              src="https://www.mapsdirections.info/crear-un-mapa-de-google/"
+              src="https://www.gamespot.com/games/doom-eternal/"
               allowFullScreen="true"
               style={{ width: '100%', height: '100%', border: 'none', borderRadius: '15px' }}
               title="Ejemplo"
@@ -28,4 +27,4 @@ const Indicador1 = () => {
   );
 };
 
-export default Indicador1;
+export default Indicador2;

@@ -117,20 +117,20 @@ export default {
               id: '',
               title: 'Descriptivo',
               type: 'item',
-              url: '/D11/Ind1',
+              url: '/D01/Ind1',
               target: false
             },
             {
               id: '',
               title: 'Indicadores',
               type: 'item',
-              url: '/D11/Ind2',
+              url: '/D01/Ind2',
               target: false
             }
           ]
         },
         {
-          id: '',
+          id: 'auth',
           title: 'Socios',
           type: 'collapse',
           icon: icons['Diversity3OutlinedIcon'],
@@ -139,14 +139,14 @@ export default {
               id: '',
               title: 'Descriptivo',
               type: 'item',
-              url: '',
+              url: '/S01/Ind1',
               target: false
             },
             {
               id: '',
               title: 'Indicadores',
               type: 'item',
-              url: '',
+              url: '/S01/Ind2',
               target: false
             }
           ]
@@ -161,14 +161,14 @@ export default {
               id: '',
               title: 'Descriptivo',
               type: 'item',
-              url: '',
+              url: '/C01-1/Ind1',
               target: false
             },
             {
               id: '',
               title: 'Indicadores',
               type: 'item',
-              url: '',
+              url: '/C01-2/Ind2',
               target: false
             }
           ]
@@ -183,14 +183,14 @@ export default {
               id: '',
               title: 'Descriptivo',
               type: 'item',
-              url: '',
+              url: '/C02-1/Ind1',
               target: false
             },
             {
               id: '',
               title: 'Indicadores',
               type: 'item',
-              url: '',
+              url: '/C02-2/Ind2',
               target: false
             }
           ]
@@ -205,14 +205,14 @@ export default {
               id: '',
               title: 'Descriptivo',
               type: 'item',
-              url: '',
+              url: '/L01/Ind1',
               target: false
             },
             {
               id: '',
               title: 'Indicadores',
               type: 'item',
-              url: '',
+              url: '/L01/Ind2',
               target: false
             }
           ]

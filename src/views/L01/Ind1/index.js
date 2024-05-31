@@ -6,7 +6,7 @@ import { Grid } from '@mui/material';
 // project import
 import { gridSpacing } from 'config.js';
 
-// ==============================|| D01-Indicador1 ||============================== //
+// ==============================|| L01-Indicador1 ||============================== //
 
 const Indicador1 = () => {
   return (
@@ -15,7 +15,6 @@ const Indicador1 = () => {
         <Grid item xs={12}>
           <div style={{ width: '100%', height: '100vh' }}>
             <iframe
-              //Cambiar link del Iframe
               src="https://www.mapsdirections.info/crear-un-mapa-de-google/"
               allowFullScreen="true"
               style={{ width: '100%', height: '100%', border: 'none', borderRadius: '15px' }}
