@@ -5,7 +5,7 @@ import { grey } from '@mui/material/colors';
 // project import
 import value from '../assets/scss/_themes-vars.scss';
 
-// ==============================|| THEME ||============================== //
+// ==============================|| Tema ||============================== //
 
 export function theme() {
   let textPrimary;

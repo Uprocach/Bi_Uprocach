@@ -8,6 +8,15 @@ import BlockOutlinedIcon from '@mui/icons-material/BlockOutlined';
 import ChromeReaderModeOutlinedIcon from '@mui/icons-material/ChromeReaderModeOutlined';
 import SecurityOutlinedIcon from '@mui/icons-material/SecurityOutlined';
 import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
+//Importacion de los iconos a usar
+import AccountBalanceOutlinedIcon from '@mui/icons-material/AccountBalanceOutlined';
+import SavingsOutlinedIcon from '@mui/icons-material/SavingsOutlined';
+import Diversity3OutlinedIcon from '@mui/icons-material/Diversity3Outlined';
+import VerifiedOutlinedIcon from '@mui/icons-material/VerifiedOutlined';
+import PaidOutlinedIcon from '@mui/icons-material/PaidOutlined';
+import BalanceOutlinedIcon from '@mui/icons-material/BalanceOutlined';
+import AutoStoriesOutlinedIcon from '@mui/icons-material/AutoStoriesOutlined';
+import TravelExploreOutlinedIcon from '@mui/icons-material/TravelExploreOutlined';
 
 const icons = {
   NavigationOutlinedIcon: NavigationOutlinedIcon,
@@ -18,7 +27,16 @@ const icons = {
   AccountTreeOutlinedIcon: AccountTreeOutlinedIcon,
   BlockOutlinedIcon: BlockOutlinedIcon,
   AppsOutlinedIcon: AppsOutlinedIcon,
-  ContactSupportOutlinedIcon: ContactSupportOutlinedIcon
+  ContactSupportOutlinedIcon: ContactSupportOutlinedIcon,
+  //Aqui se colocan las const para almacenar los icones desde aqui son para cada estructura
+  AccountBalanceOutlinedIcon: AccountBalanceOutlinedIcon,
+  SavingsOutlinedIcon: SavingsOutlinedIcon,
+  Diversity3OutlinedIcon: Diversity3OutlinedIcon,
+  VerifiedOutlinedIcon: VerifiedOutlinedIcon,
+  PaidOutlinedIcon: PaidOutlinedIcon,
+  BalanceOutlinedIcon: BalanceOutlinedIcon,
+  AutoStoriesOutlinedIcon: AutoStoriesOutlinedIcon,
+  TravelExploreOutlinedIcon: TravelExploreOutlinedIcon
 };
 
 // eslint-disable-next-line
@@ -26,14 +44,13 @@ export default {
   items: [
     {
       id: 'navigation',
-      title: 'Materially',
-      caption: 'Dashboard',
+      title: 'UPROCACH',
       type: 'group',
       icon: icons['NavigationOutlinedIcon'],
       children: [
         {
           id: 'dashboard',
-          title: 'Dashboard',
+          title: 'Inicio',
           type: 'item',
           icon: icons['HomeOutlinedIcon'],
           url: '/dashboard/default'
@@ -42,19 +59,33 @@ export default {
     },
     {
       id: 'pages',
-      title: 'Pages',
-      caption: 'Prebuild Pages',
+      title: 'Estructuras',
       type: 'group',
       icon: icons['NavigationOutlinedIcon'],
       children: [
         {
           id: 'sample-page',
-          title: 'Sample Page',
-          type: 'item',
-          url: '/sample-page',
-          icon: icons['ChromeReaderModeOutlinedIcon']
+          title: 'Estados Financieros Mensual',
+          type: 'collapse',
+          icon: icons['ChromeReaderModeOutlinedIcon'],
+          children: [
+            {
+              id: '',
+              title: 'Indicador',
+              type: 'item',
+              url: '/sample-page',
+              target: false
+            },
+            {
+              id: '',
+              title: 'Indicador',
+              type: 'item',
+              url: '',
+              target: false
+            }
+          ]
         },
-        {
+        /*{
           id: 'auth',
           title: 'Authentication',
           type: 'collapse',
@@ -73,6 +104,116 @@ export default {
               type: 'item',
               url: '/application/register',
               target: true
+            }
+          ]
+        },*/
+        {
+          id: 'auth',
+          title: 'Dépositos',
+          type: 'collapse',
+          icon: icons['SavingsOutlinedIcon'],
+          children: [
+            {
+              id: '',
+              title: 'Indicador',
+              type: 'item',
+              url: '',
+              target: false
+            },
+            {
+              id: '',
+              title: 'Indicador',
+              type: 'item',
+              url: '',
+              target: false
+            }
+          ]
+        },
+        {
+          id: '',
+          title: 'Socios',
+          type: 'collapse',
+          icon: icons['Diversity3OutlinedIcon'],
+          children: [
+            {
+              id: '',
+              title: 'Indicador',
+              type: 'item',
+              url: '',
+              target: false
+            },
+            {
+              id: '',
+              title: 'Indicador',
+              type: 'item',
+              url: '',
+              target: false
+            }
+          ]
+        },
+        {
+          id: 'auth',
+          title: 'Operaciones concedidas',
+          type: 'collapse',
+          icon: icons['VerifiedOutlinedIcon'],
+          children: [
+            {
+              id: '',
+              title: 'Indicador',
+              type: 'item',
+              url: '',
+              target: false
+            },
+            {
+              id: '',
+              title: 'Indicador',
+              type: 'item',
+              url: '',
+              target: false
+            }
+          ]
+        },
+        {
+          id: 'auth',
+          title: 'Saldos de operaciones',
+          type: 'collapse',
+          icon: icons['PaidOutlinedIcon'],
+          children: [
+            {
+              id: '',
+              title: 'Indicador',
+              type: 'item',
+              url: '',
+              target: false
+            },
+            {
+              id: '',
+              title: 'Indicador',
+              type: 'item',
+              url: '',
+              target: false
+            }
+          ]
+        },
+        {
+          id: 'auth',
+          title: 'Liquidez estructural',
+          type: 'collapse',
+          icon: icons['BalanceOutlinedIcon'],
+          children: [
+            {
+              id: '',
+              title: 'Indicador',
+              type: 'item',
+              url: '',
+              target: false
+            },
+            {
+              id: '',
+              title: 'Indicador',
+              type: 'item',
+              url: '',
+              target: false
             }
           ]
         }
@@ -104,26 +245,26 @@ export default {
     },
     {
       id: 'support',
-      title: 'Support',
+      title: 'Soporte',
       type: 'group',
       icon: icons['ContactSupportOutlinedIcon'],
       children: [
         {
-          id: 'disabled-menu',
-          title: 'Disabled Menu',
+          id: '',
+          title: 'Manual de uso',
           type: 'item',
           url: '#',
-          icon: icons['BlockOutlinedIcon'],
-          disabled: true
+          icon: icons['AutoStoriesOutlinedIcon'],
+          disabled: false
         },
         {
           id: 'documentation',
-          title: 'Documentation',
+          title: 'Uprocach',
           type: 'item',
-          url: 'https://codedthemes.gitbook.io/materially-react-material-documentation/',
-          icon: icons['HelpOutlineOutlinedIcon'],
+          url: 'https://uprocach.odoo.com/',
+          icon: icons['TravelExploreOutlinedIcon'],
           chip: {
-            label: 'Help?',
+            label: 'Clic Aqui!',
             color: 'primary'
           },
           external: true,

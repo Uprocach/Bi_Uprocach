@@ -1,11 +1,11 @@
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
 import {
   Box,
   Button,
-  Divider,
   FormHelperText,
   Grid,
   TextField,
@@ -24,7 +24,6 @@ import { Formik } from 'formik';
 // assets
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
-import Google from 'assets/images/social-google.svg';
 
 // ==============================|| FIREBASE LOGIN ||============================== //
 
@@ -42,47 +41,6 @@ const FirebaseLogin = ({ ...rest }) => {
 
   return (
     <>
-      <Grid container justifyContent="center">
-        <Grid item xs={12}>
-          <Button
-            fullWidth={true}
-            sx={{
-              fontSize: { md: '1rem', xs: '0.875rem' },
-              fontWeight: 500,
-              backgroundColor: theme.palette.grey[50],
-              color: theme.palette.grey[600],
-              textTransform: 'capitalize',
-              '&:hover': {
-                backgroundColor: theme.palette.grey[100]
-              }
-            }}
-            size="large"
-            variant="contained"
-          >
-            <img
-              src={Google}
-              alt="google"
-              width="20px"
-              style={{
-                marginRight: '16px',
-                '@media (maxWidth:899.95px)': {
-                  marginRight: '8px'
-                }
-              }}
-            />{' '}
-            Sign in with Google
-          </Button>
-        </Grid>
-      </Grid>
-
-      <Box alignItems="center" display="flex" mt={2}>
-        <Divider sx={{ flexGrow: 1 }} orientation="horizontal" />
-        <Typography color="textSecondary" variant="h5" sx={{ m: theme.spacing(2) }}>
-          OR
-        </Typography>
-        <Divider sx={{ flexGrow: 1 }} orientation="horizontal" />
-      </Box>
-
       <Formik
         initialValues={{
           email: '',
@@ -90,8 +48,8 @@ const FirebaseLogin = ({ ...rest }) => {
           submit: null
         }}
         validationSchema={Yup.object().shape({
-          email: Yup.string().email('Must be a valid email').max(255).required('Email is required'),
-          password: Yup.string().max(255).required('Password is required')
+          email: Yup.string().email('Debe ser un correo valido').max(255).required('Correo electrónico requerido'),
+          password: Yup.string().max(255).required('Contraseña requerida')
         })}
       >
         {({ errors, handleBlur, handleChange, handleSubmit, isSubmitting, touched, values }) => (
@@ -100,7 +58,7 @@ const FirebaseLogin = ({ ...rest }) => {
               error={Boolean(touched.email && errors.email)}
               fullWidth
               helperText={touched.email && errors.email}
-              label="Email Address / Username"
+              label="Correo Electrónico"
               margin="normal"
               name="email"
               onBlur={handleBlur}
@@ -111,7 +69,7 @@ const FirebaseLogin = ({ ...rest }) => {
             />
 
             <FormControl fullWidth error={Boolean(touched.password && errors.password)} sx={{ mt: theme.spacing(3), mb: theme.spacing(1) }}>
-              <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
+              <InputLabel htmlFor="outlined-adornment-password">Contraseña</InputLabel>
               <OutlinedInput
                 id="outlined-adornment-password"
                 type={showPassword ? 'text' : 'password'}
@@ -119,7 +77,7 @@ const FirebaseLogin = ({ ...rest }) => {
                 name="password"
                 onBlur={handleBlur}
                 onChange={handleChange}
-                label="Password"
+                label="Contraseña"
                 endAdornment={
                   <InputAdornment position="end">
                     <IconButton
@@ -144,7 +102,7 @@ const FirebaseLogin = ({ ...rest }) => {
             <Grid container justifyContent="flex-end">
               <Grid item>
                 <Typography variant="subtitle2" color="primary" sx={{ textDecoration: 'none' }}>
-                  Forgot Password?
+                  Olvidaste tu contraseña?
                 </Typography>
               </Grid>
             </Grid>
@@ -156,8 +114,17 @@ const FirebaseLogin = ({ ...rest }) => {
             )}
 
             <Box mt={2}>
-              <Button color="primary" disabled={isSubmitting} fullWidth size="large" type="submit" variant="contained">
-                Log In
+              <Button
+                color="primary"
+                disabled={isSubmitting}
+                fullWidth
+                size="large"
+                type="submit"
+                variant="contained"
+                component={RouterLink}
+                to="/"
+              >
+                Inciar Sesión
               </Button>
             </Box>
           </form>
