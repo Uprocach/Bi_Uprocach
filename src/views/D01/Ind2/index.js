@@ -15,7 +15,7 @@ const Indicador2 = () => {
         <Grid item xs={12}>
           <div style={{ width: '100%', height: '100vh' }}>
             <iframe
-              src="https://www.consolidatedcredit.org/es/calculadoras/calculadora-de-prestamos/"
+              src="https://app.powerbi.com/view?r=eyJrIjoiMTBkMzdjNmQtZDRhZS00NjNlLWEwYTEtNTNiNjQxNTQ2NDhkIiwidCI6ImMwNWUxMWU1LTcwNmMtNGNlZi1iYTVlLTE4ZWVkYmYxMDAzNyJ9&amp;isMobile=true&amp;uid=s0qzu7"
               allowFullScreen="true"
               style={{ width: '100%', height: '100%', border: 'none', borderRadius: '15px' }}
               title="Ejemplo"

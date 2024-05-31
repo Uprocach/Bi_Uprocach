@@ -16,7 +16,7 @@ const Indicador1 = () => {
           <div style={{ width: '100%', height: '100vh' }}>
             <iframe
               //Cambiar link del Iframe
-              src="https://www.mapsdirections.info/crear-un-mapa-de-google/"
+              src="https://app.powerbi.com/view?r=eyJrIjoiZjRhZDE3NDItYzVlNy00NWE5LWEzZTktODQ4YTNjZTAwZTBlIiwidCI6ImMwNWUxMWU1LTcwNmMtNGNlZi1iYTVlLTE4ZWVkYmYxMDAzNyJ9&amp;isMobile=true&amp;uid=fpej3q"
               allowFullScreen="true"
               style={{ width: '100%', height: '100%', border: 'none', borderRadius: '15px' }}
               title="Ejemplo"

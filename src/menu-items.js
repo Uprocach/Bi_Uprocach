@@ -108,7 +108,7 @@ export default {
           ]
         },*/
         {
-          id: 'auth',
+          id: 'depo',
           title: 'Dépositos',
           type: 'collapse',
           icon: icons['SavingsOutlinedIcon'],
@@ -130,7 +130,7 @@ export default {
           ]
         },
         {
-          id: 'auth',
+          id: 'socio',
           title: 'Socios',
           type: 'collapse',
           icon: icons['Diversity3OutlinedIcon'],
@@ -152,7 +152,7 @@ export default {
           ]
         },
         {
-          id: 'auth',
+          id: 'opera',
           title: 'Operaciones concedidas',
           type: 'collapse',
           icon: icons['VerifiedOutlinedIcon'],
@@ -174,7 +174,7 @@ export default {
           ]
         },
         {
-          id: 'auth',
+          id: 'saldo',
           title: 'Saldos de operaciones',
           type: 'collapse',
           icon: icons['PaidOutlinedIcon'],
@@ -196,7 +196,7 @@ export default {
           ]
         },
         {
-          id: 'auth',
+          id: 'liqui',
           title: 'Liquidez estructural',
           type: 'collapse',
           icon: icons['BalanceOutlinedIcon'],
