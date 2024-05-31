@@ -53,7 +53,7 @@ export default {
           title: 'Inicio',
           type: 'item',
           icon: icons['HomeOutlinedIcon'],
-          url: '/dashboard/default'
+          url: '/sample-page'
         }
       ]
     },
@@ -71,16 +71,16 @@ export default {
           children: [
             {
               id: '',
-              title: 'Indicador',
+              title: 'Descriptivo',
               type: 'item',
-              url: '/sample-page',
+              url: '/B11/Ind1',
               target: false
             },
             {
               id: '',
-              title: 'Indicador',
+              title: 'Indicadores',
               type: 'item',
-              url: '',
+              url: '/B11/Ind2',
               target: false
             }
           ]
@@ -115,16 +115,16 @@ export default {
           children: [
             {
               id: '',
-              title: 'Indicador',
+              title: 'Descriptivo',
               type: 'item',
-              url: '',
+              url: '/D11/Ind1',
               target: false
             },
             {
               id: '',
-              title: 'Indicador',
+              title: 'Indicadores',
               type: 'item',
-              url: '',
+              url: '/D11/Ind2',
               target: false
             }
           ]
@@ -137,14 +137,14 @@ export default {
           children: [
             {
               id: '',
-              title: 'Indicador',
+              title: 'Descriptivo',
               type: 'item',
               url: '',
               target: false
             },
             {
               id: '',
-              title: 'Indicador',
+              title: 'Indicadores',
               type: 'item',
               url: '',
               target: false
@@ -159,14 +159,14 @@ export default {
           children: [
             {
               id: '',
-              title: 'Indicador',
+              title: 'Descriptivo',
               type: 'item',
               url: '',
               target: false
             },
             {
               id: '',
-              title: 'Indicador',
+              title: 'Indicadores',
               type: 'item',
               url: '',
               target: false
@@ -181,14 +181,14 @@ export default {
           children: [
             {
               id: '',
-              title: 'Indicador',
+              title: 'Descriptivo',
               type: 'item',
               url: '',
               target: false
             },
             {
               id: '',
-              title: 'Indicador',
+              title: 'Indicadores',
               type: 'item',
               url: '',
               target: false
@@ -203,14 +203,14 @@ export default {
           children: [
             {
               id: '',
-              title: 'Indicador',
+              title: 'Descriptivo',
               type: 'item',
               url: '',
               target: false
             },
             {
               id: '',
-              title: 'Indicador',
+              title: 'Indicadores',
               type: 'item',
               url: '',
               target: false
@@ -219,30 +219,6 @@ export default {
         }
       ]
     },
-    /*{
-      id: 'utils',
-      title: 'Utils',
-      type: 'group',
-      icon: icons['AccountTreeOutlinedIcon'],
-      children: [
-        {
-          id: 'util-icons',
-          title: 'Icons',
-          type: 'item',
-          url: 'https://mui.com/material-ui/material-icons/',
-          icon: icons['AppsOutlinedIcon'],
-          external: true,
-          target: true
-        },
-        {
-          id: 'util-typography',
-          title: 'Typography',
-          type: 'item',
-          url: '/utils/util-typography',
-          icon: icons['FormatColorTextOutlinedIcon']
-        }
-      ]
-    },*/
     {
       id: 'support',
       title: 'Soporte',

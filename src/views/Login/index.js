@@ -41,14 +41,14 @@ const Login = () => {
           <CardContent sx={{ p: theme.spacing(5, 4, 3, 4) }}>
             <Grid container direction="column" spacing={4} justifyContent="center">
               <Grid item xs={12}>
-                <Grid container justifyContent="space-between">
+                <Grid container justifyContent="center">
                   <Grid item>
-                    <Grid item>
+                    <Grid item marginLeft="50px">
                       <RouterLink to="/">
                         <img alt="Auth method" src={Logo} />
                       </RouterLink>
                     </Grid>
-                    <Typography color="textPrimary" gutterBottom variant="h2">
+                    <Typography color="textPrimary" gutterBottom variant="h2" marginLeft="32px">
                       Inicia Sesión
                     </Typography>
                     <Typography variant="body2" color="textSecondary">

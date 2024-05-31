@@ -7,7 +7,7 @@ import { Fade, Button, ClickAwayListener, Paper, Popper, List, ListItemText, Lis
 
 // assets
 import AccountCircleTwoToneIcon from '@mui/icons-material/AccountCircleTwoTone';
-import LoginIcon from '@mui/icons-material/Login';
+import LogoutIcon from '@mui/icons-material/Logout';
 import HelpOutlineOutlined from '@mui/icons-material/HelpOutlineOutlined';
 
 // ==============================|| PROFILE SECTION ||============================== //
@@ -93,6 +93,12 @@ const ProfileSection = () => {
                     borderRadius: '10px'
                   }}
                 >
+                  <ListItemButton selected={selectedIndex === 1} onClick={(event) => handleListItemClick(event, 0)}>
+                    <ListItemIcon>
+                      <HelpOutlineOutlined />
+                    </ListItemIcon>
+                    <ListItemText primary="Acerca de..." />
+                  </ListItemButton>
                   <ListItemButton
                     selected={selectedIndex === 0}
                     onClick={(event) => handleListItemClick(event, 0)}
@@ -100,15 +106,9 @@ const ProfileSection = () => {
                     to="/application/login"
                   >
                     <ListItemIcon>
-                      <LoginIcon />
+                      <LogoutIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Iniciar Sesión" />
-                  </ListItemButton>
-                  <ListItemButton selected={selectedIndex === 1} onClick={(event) => handleListItemClick(event, 0)}>
-                    <ListItemIcon>
-                      <HelpOutlineOutlined />
-                    </ListItemIcon>
-                    <ListItemText primary="Acerca de..." />
+                    <ListItemText primary="Cerrar Sesión" />
                   </ListItemButton>
                 </List>
               </ClickAwayListener>
