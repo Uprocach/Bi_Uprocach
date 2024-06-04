@@ -226,12 +226,11 @@ export default {
       icon: icons['ContactSupportOutlinedIcon'],
       children: [
         {
-          id: '',
+          id: 'manual',
           title: 'Manual de uso',
           type: 'item',
-          url: '#',
-          icon: icons['AutoStoriesOutlinedIcon'],
-          disabled: false
+          url: '',
+          icon: icons['AutoStoriesOutlinedIcon']
         },
         {
           id: 'documentation',
