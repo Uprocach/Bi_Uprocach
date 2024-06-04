@@ -21,8 +21,12 @@ const Login = () => {
       container
       justifyContent="center"
       alignItems="center"
-      sx={{ backgroundColor: theme.palette.common.black, height: '100%', minHeight: '100vh' }}
+      sx={{ backgroundColor: theme.palette.common.white, height: '100%', minHeight: '100vh' }}
     >
+      <img
+        src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTkzN2V6MWNnenE0OG8yMWVpNXl2eG56anFxa3B1aHFkNmtmeWxqbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l378c04F2fjeZ7vH2/giphy.gif"
+        alt="Login-GIF"
+      />
       <Grid item xs={11} sm={7} md={6} lg={4}>
         <Card
           sx={{
