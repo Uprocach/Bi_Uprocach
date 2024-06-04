@@ -19,15 +19,17 @@ const Login = () => {
   return (
     <Grid
       container
-      justifyContent="center"
+      justifyContent="end"
       alignItems="center"
-      sx={{ backgroundColor: theme.palette.common.white, height: '100%', minHeight: '100vh' }}
+      sx={{
+        backgroundImage: `url('../assets/images/')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: '100%',
+        minHeight: '100vh'
+      }}
     >
-      <img
-        src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTkzN2V6MWNnenE0OG8yMWVpNXl2eG56anFxa3B1aHFkNmtmeWxqbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l378c04F2fjeZ7vH2/giphy.gif"
-        alt="Login-GIF"
-      />
-      <Grid item xs={11} sm={7} md={6} lg={4}>
+      <Grid item xs={12} sm={7} md={6} lg={4}>
         <Card
           sx={{
             overflow: 'visible',
@@ -48,7 +50,7 @@ const Login = () => {
                 <Grid container justifyContent="center">
                   <Grid item>
                     <Grid item marginLeft="50px">
-                      <RouterLink to="/">
+                      <RouterLink to="https://uprocach.odoo.com/">
                         <img alt="Auth method" src={Logo} />
                       </RouterLink>
                     </Grid>
