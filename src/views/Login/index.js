@@ -22,8 +22,9 @@ const Login = () => {
       justifyContent="end"
       alignItems="center"
       sx={{
-        backgroundImage: `url('../assets/images/')`,
-        backgroundSize: 'cover',
+        backgroundImage: `url('../../assets/images/')`,
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         height: '100%',
         minHeight: '100vh'
