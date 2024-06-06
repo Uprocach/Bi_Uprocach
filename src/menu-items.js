@@ -38,6 +38,24 @@ const icons = {
   AutoStoriesOutlinedIcon: AutoStoriesOutlinedIcon,
   TravelExploreOutlinedIcon: TravelExploreOutlinedIcon
 };
+/**
+ * Los Id paa cada hijo es correspondiente a cada estructura 
+ * n= numero de id hijos que tenga esa estructura
+ * B11 = bhn
+ * D01 = dhn
+ * S01 = shn
+ * C01 = c1hn
+ * C02 = c2hn
+ * L01 = lhn
+ * 
+ * Ejemplo 
+ * {
+      id: 'bh1',
+    },
+    {
+      id: 'bh2',
+    }
+ */
 
 // eslint-disable-next-line
 export default {
@@ -70,14 +88,14 @@ export default {
           icon: icons['ChromeReaderModeOutlinedIcon'],
           children: [
             {
-              id: '',
+              id: 'bh1',
               title: 'Descriptivo',
               type: 'item',
               url: '/B11/Ind1',
               target: false
             },
             {
-              id: '',
+              id: 'bh2',
               title: 'Indicadores',
               type: 'item',
               url: '/B11/Ind2',
@@ -92,14 +110,14 @@ export default {
           icon: icons['SavingsOutlinedIcon'],
           children: [
             {
-              id: '',
+              id: 'dh1',
               title: 'Descriptivo',
               type: 'item',
               url: '/D01/Ind1',
               target: false
             },
             {
-              id: '',
+              id: 'dh2',
               title: 'Indicadores',
               type: 'item',
               url: '/D01/Ind2',
@@ -114,14 +132,14 @@ export default {
           icon: icons['Diversity3OutlinedIcon'],
           children: [
             {
-              id: '',
+              id: 'sh1',
               title: 'Descriptivo',
               type: 'item',
               url: '/S01/Ind1',
               target: false
             },
             {
-              id: '',
+              id: 'sh2',
               title: 'Indicadores',
               type: 'item',
               url: '/S01/Ind2',
@@ -136,14 +154,14 @@ export default {
           icon: icons['VerifiedOutlinedIcon'],
           children: [
             {
-              id: '',
+              id: 'c1h1',
               title: 'Descriptivo',
               type: 'item',
               url: '/C01-1/Ind1',
               target: false
             },
             {
-              id: '',
+              id: 'c1h2',
               title: 'Indicadores',
               type: 'item',
               url: '/C01-2/Ind2',
@@ -158,14 +176,14 @@ export default {
           icon: icons['PaidOutlinedIcon'],
           children: [
             {
-              id: '',
+              id: 'c2h1',
               title: 'Descriptivo',
               type: 'item',
               url: '/C02-1/Ind1',
               target: false
             },
             {
-              id: '',
+              id: 'c2h1',
               title: 'Indicadores',
               type: 'item',
               url: '/C02-2/Ind2',
@@ -180,14 +198,14 @@ export default {
           icon: icons['BalanceOutlinedIcon'],
           children: [
             {
-              id: '',
+              id: 'lh1',
               title: 'Descriptivo',
               type: 'item',
               url: '/L01/Ind1',
               target: false
             },
             {
-              id: '',
+              id: 'lh2',
               title: 'Indicadores',
               type: 'item',
               url: '/L01/Ind2',
