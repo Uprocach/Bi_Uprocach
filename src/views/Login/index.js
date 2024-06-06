@@ -10,6 +10,7 @@ import AuthLogin from './FirebaseLogin';
 
 // assets
 import Logo from 'assets/images/logo-dark.svg';
+import LoginL from 'assets/images/login.jpg';
 
 // ==============================|| LOGIN ||============================== //
 
@@ -22,10 +23,10 @@ const Login = () => {
       justifyContent="end"
       alignItems="center"
       sx={{
-        backgroundImage: `url('../../assets/images/')`,
-        backgroundSize: 'contain',
+        backgroundImage: `url(${LoginL})`,
+        backgroundSize: 'auto',
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
+        backgroundPosition: 'left',
         height: '100%',
         minHeight: '100vh'
       }}
