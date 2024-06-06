@@ -10,7 +10,7 @@ import AuthLogin from './FirebaseLogin';
 
 // assets
 import Logo from 'assets/images/logo-dark.svg';
-import LoginL from 'assets/images/login.jpg';
+import LoginL from 'assets/images/login.png';
 
 // ==============================|| LOGIN ||============================== //
 
