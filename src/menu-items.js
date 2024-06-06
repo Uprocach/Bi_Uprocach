@@ -53,7 +53,7 @@ export default {
           title: 'Inicio',
           type: 'item',
           icon: icons['HomeOutlinedIcon'],
-          url: '/sample-page'
+          url: ''
         }
       ]
     },
@@ -85,28 +85,6 @@ export default {
             }
           ]
         },
-        /*{
-          id: 'auth',
-          title: 'Authentication',
-          type: 'collapse',
-          icon: icons['SecurityOutlinedIcon'],
-          children: [
-            {
-              id: 'login-1',
-              title: 'Login',
-              type: 'item',
-              url: '/application/login',
-              target: true
-            },
-            {
-              id: 'register',
-              title: 'Register',
-              type: 'item',
-              url: '/application/register',
-              target: true
-            }
-          ]
-        },*/
         {
           id: 'depo',
           title: 'Dépositos',
@@ -229,8 +207,15 @@ export default {
           id: 'manual',
           title: 'Manual de uso',
           type: 'item',
-          url: '',
+          url: '/manual-uso',
           icon: icons['AutoStoriesOutlinedIcon']
+        },
+        {
+          id: 'datos',
+          title: 'Protección de Datos',
+          type: 'item',
+          url: '/proteccion-datos',
+          icon: icons['SecurityOutlinedIcon']
         },
         {
           id: 'documentation',

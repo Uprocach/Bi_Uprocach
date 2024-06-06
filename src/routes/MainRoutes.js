@@ -43,6 +43,12 @@ const IndicadorL2 = Loadable(lazy(() => import('../views/L01/Ind2')));
 const IndicadorS1 = Loadable(lazy(() => import('../views/S01/Ind1')));
 
 const IndicadorS2 = Loadable(lazy(() => import('../views/S01/Ind2')));
+
+// Rutas para Manual de uso y Protección de Datos/...
+
+const Manual = Loadable(lazy(() => import('../views/manual')));
+
+const Proteccion = Loadable(lazy(() => import('../views/proteccion')));
 // ==============================|| MAIN ROUTES ||============================== //
 
 const MainRoutes = {
@@ -105,6 +111,14 @@ const MainRoutes = {
     {
       path: '/S01/Ind2',
       element: <IndicadorS2 />
+    },
+    {
+      path: '/manual-uso',
+      element: <Manual />
+    },
+    {
+      path: '/proteccion-datos',
+      element: <Proteccion />
     }
   ]
 };
