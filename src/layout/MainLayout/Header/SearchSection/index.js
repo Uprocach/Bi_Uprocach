@@ -90,7 +90,7 @@ const SearchSection = () => {
                               </Box>
                               <InputBase
                                 fullWidth
-                                placeholder="Search…"
+                                placeholder="Busqueda…"
                                 sx={{
                                   '& .MuiInputBase-root': {
                                     color: 'inherit'
@@ -107,7 +107,7 @@ const SearchSection = () => {
                                     }
                                   }
                                 }}
-                                inputProps={{ 'aria-label': 'search' }}
+                                inputProps={{ 'aria-label': 'busqueda' }}
                               />
                               <Box
                                 sx={{
@@ -149,7 +149,7 @@ const SearchSection = () => {
           <SearchTwoToneIcon />
         </Box>
         <InputBase
-          placeholder="Search…"
+          placeholder="Busqueda…"
           sx={{
             '& .MuiInputBase-root': {
               color: 'inherit',
