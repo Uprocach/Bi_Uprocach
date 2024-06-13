@@ -183,7 +183,7 @@ export default {
               target: false
             },
             {
-              id: 'c2h1',
+              id: 'c2h2',
               title: 'Indicadores',
               type: 'item',
               url: '/C02-2/Ind2',
