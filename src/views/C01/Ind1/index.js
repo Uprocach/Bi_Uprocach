@@ -15,10 +15,10 @@ const Indicador1 = () => {
         <Grid item xs={12}>
           <div style={{ width: '100%', height: '100vh' }}>
             <iframe
-              src="https://app.powerbi.com/view?r=eyJrIjoiNTk3MGE2MTQtZDBiYy00YWQyLWE0NWUtNWMzYzQwNGUyMTY2IiwidCI6ImMwNWUxMWU1LTcwNmMtNGNlZi1iYTVlLTE4ZWVkYmYxMDAzNyJ9&amp;isMobile=true&amp;uid=ezv9m"
+              src="https://lookerstudio.google.com/embed/reporting/15d0b0b4-fd9f-471a-9b5f-e834f17cedfb/page/p_1u3hnrhsfd"
               allowFullScreen="true"
               style={{ width: '100%', height: '100%', border: 'none', borderRadius: '15px' }}
-              title="Ejemplo"
+              title="Operaciones Concedidas"
             ></iframe>
           </div>
         </Grid>
