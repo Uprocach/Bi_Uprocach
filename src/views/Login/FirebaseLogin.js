@@ -124,7 +124,7 @@ const FirebaseLogin = ({ ...rest }) => {
                 component={RouterLink}
                 to="/"
               >
-                Inciar Sesión
+                Iniciar Sesión
               </Button>
             </Box>
           </form>

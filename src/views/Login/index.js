@@ -16,6 +16,10 @@ import LoginL from 'assets/images/login.png';
 
 const Login = () => {
   const theme = useTheme();
+  const correo = 'bi.uprocach@gmail.com';
+  const abrirCorreo = () => {
+    window.location.href = `mailto:${correo}`;
+  };
 
   return (
     <Grid
@@ -70,7 +74,13 @@ const Login = () => {
               </Grid>
               <Grid container justifyContent="flex-start" sx={{ mt: theme.spacing(2), mb: theme.spacing(1) }}>
                 <Grid item>
-                  <Typography variant="subtitle2" color="secondary" sx={{ textDecoration: 'none', pl: 2 }}>
+                  <Typography
+                    variant="subtitle2"
+                    color="secondary"
+                    sx={{ textDecoration: 'none', pl: 2 }}
+                    onClick={abrirCorreo()}
+                    style={{ cursor: 'pointer' }}
+                  >
                     Crear una nueva cuenta
                   </Typography>
                 </Grid>
