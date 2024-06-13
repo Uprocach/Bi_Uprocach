@@ -78,7 +78,7 @@ const Login = () => {
                     variant="subtitle2"
                     color="secondary"
                     sx={{ textDecoration: 'none', pl: 2 }}
-                    onClick={abrirCorreo()}
+                    onClick={abrirCorreo}
                     style={{ cursor: 'pointer' }}
                   >
                     Crear una nueva cuenta
