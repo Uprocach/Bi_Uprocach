@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link as RouterLink } from 'react-router-dom';
-//import supabase from '../../routes/supabase';
+import { supabase } from '../../routes/supabase';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
@@ -21,6 +20,7 @@ import {
 //  third party
 import * as Yup from 'yup';
 import { Formik } from 'formik';
+import { useNavigate } from 'react-router-dom';
 
 // assets
 import Visibility from '@mui/icons-material/Visibility';
@@ -31,6 +31,7 @@ import VisibilityOff from '@mui/icons-material/VisibilityOff';
 const FirebaseLogin = ({ ...rest }) => {
   const theme = useTheme();
   const [showPassword, setShowPassword] = React.useState(false);
+  const navigate = useNavigate();
 
   const handleClickShowPassword = () => {
     setShowPassword(!showPassword);
@@ -38,6 +39,24 @@ const FirebaseLogin = ({ ...rest }) => {
 
   const handleMouseDownPassword = (event) => {
     event.preventDefault();
+  };
+
+  const handleLogin = async (values, { setErrors, setSubmitting }) => {
+    try {
+      const { email, password } = values;
+      const { error } = await supabase.auth.signInWithPassword({ email, password });
+
+      if (error) {
+        setErrors({ submit: error.message });
+      } else {
+        // Redirigir al dashboard
+        navigate('/app/dashboard');
+      }
+    } catch (error) {
+      setErrors({ submit: error.message });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -52,6 +71,7 @@ const FirebaseLogin = ({ ...rest }) => {
           email: Yup.string().email('Debe ser un correo valido').max(255).required('Correo electrónico requerido'),
           password: Yup.string().max(255).required('Contraseña requerida')
         })}
+        onSubmit={handleLogin}
       >
         {({ errors, handleBlur, handleChange, handleSubmit, isSubmitting, touched, values }) => (
           <form noValidate onSubmit={handleSubmit} {...rest}>
@@ -122,8 +142,8 @@ const FirebaseLogin = ({ ...rest }) => {
                 size="large"
                 type="submit"
                 variant="contained"
-                component={RouterLink}
-                to="/app/dashboard"
+                //component={RouterLink}
+                //to="/app/dashboard"
               >
                 Iniciar Sesión
               </Button>
