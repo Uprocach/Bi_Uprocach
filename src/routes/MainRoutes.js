@@ -6,7 +6,7 @@ import Loadable from 'component/Loadable';
 
 const DashboardDefault = Loadable(lazy(() => import('../views/Dashboard')));
 
-const SamplePage = Loadable(lazy(() => import('../views/SamplePage')));
+//const SamplePage = Loadable(lazy(() => import('../views/SamplePage')));
 
 // Rutas para indicadores estructura B11 creados en la carpeta views/...
 
@@ -49,75 +49,77 @@ const IndicadorS2 = Loadable(lazy(() => import('../views/S01/Ind2')));
 const Manual = Loadable(lazy(() => import('../views/manual')));
 
 const Proteccion = Loadable(lazy(() => import('../views/proteccion')));
+
+//Ruta del Login
+
+//
+//const AuthLogin = Loadable(lazy(() => import('../views/Login')));
 // ==============================|| MAIN ROUTES ||============================== //
+const authenticated = localStorage.getItem('authenticated');
+console.log(authenticated);
 
 const MainRoutes = {
-  path: '/',
+  path: '/app',
   element: <MainLayout />,
   children: [
     {
-      path: '/',
+      path: 'dashboard',
       element: <DashboardDefault />
     },
     {
-      path: '/dashboard/default',
-      element: <DashboardDefault />
-    },
-    { path: '/sample-page', element: <SamplePage /> },
-    {
-      path: '/B11/Ind1',
+      path: 'B11/Ind1',
       element: <IndicadorB1 />
     },
     {
-      path: '/B11/Ind2',
+      path: 'B11/Ind2',
       element: <IndicadorB2 />
     },
     {
-      path: '/C01-1/Ind1',
+      path: 'C01-1/Ind1',
       element: <IndicadorC1_01 />
     },
     {
-      path: '/C01-2/Ind2',
+      path: 'C01-2/Ind2',
       element: <IndicadorC1_02 />
     },
     {
-      path: '/C02-1/Ind1',
+      path: 'C02-1/Ind1',
       element: <IndicadorC2_01 />
     },
     {
-      path: '/C02-2/Ind2',
+      path: 'C02-2/Ind2',
       element: <IndicadorC2_02 />
     },
     {
-      path: '/D01/Ind1',
+      path: 'D01/Ind1',
       element: <IndicadorD1 />
     },
     {
-      path: '/D01/Ind2',
+      path: 'D01/Ind2',
       element: <IndicadorD2 />
     },
     {
-      path: '/L01/Ind1',
+      path: 'L01/Ind1',
       element: <IndicadorL1 />
     },
     {
-      path: '/L01/Ind2',
+      path: 'L01/Ind2',
       element: <IndicadorL2 />
     },
     {
-      path: '/S01/Ind1',
+      path: 'S01/Ind1',
       element: <IndicadorS1 />
     },
     {
-      path: '/S01/Ind2',
+      path: 'S01/Ind2',
       element: <IndicadorS2 />
     },
     {
-      path: '/manual-uso',
+      path: 'manual-uso',
       element: <Manual />
     },
     {
-      path: '/proteccion-datos',
+      path: 'proteccion-datos',
       element: <Proteccion />
     }
   ]

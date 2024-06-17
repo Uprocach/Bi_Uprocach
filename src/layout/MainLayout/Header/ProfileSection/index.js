@@ -103,7 +103,7 @@ const ProfileSection = () => {
                     selected={selectedIndex === 0}
                     onClick={(event) => handleListItemClick(event, 0)}
                     component={RouterLink}
-                    to="/application/login"
+                    to="/"
                   >
                     <ListItemIcon>
                       <LogoutIcon />

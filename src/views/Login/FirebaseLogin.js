@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
+//import supabase from '../../routes/supabase';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
@@ -122,7 +123,7 @@ const FirebaseLogin = ({ ...rest }) => {
                 type="submit"
                 variant="contained"
                 component={RouterLink}
-                to="/"
+                to="/app/dashboard"
               >
                 Iniciar Sesión
               </Button>

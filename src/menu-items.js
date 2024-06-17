@@ -71,7 +71,7 @@ export default {
           title: 'Inicio',
           type: 'item',
           icon: icons['HomeOutlinedIcon'],
-          url: ''
+          url: '/app/dashboard'
         }
       ]
     },
@@ -91,14 +91,14 @@ export default {
               id: 'bh1',
               title: 'Descriptivo',
               type: 'item',
-              url: '/B11/Ind1',
+              url: 'B11/Ind1',
               target: false
             },
             {
               id: 'bh2',
               title: 'Indicadores',
               type: 'item',
-              url: '/B11/Ind2',
+              url: 'B11/Ind2',
               target: false
             }
           ]
@@ -113,14 +113,14 @@ export default {
               id: 'dh1',
               title: 'Descriptivo',
               type: 'item',
-              url: '/D01/Ind1',
+              url: 'D01/Ind1',
               target: false
             },
             {
               id: 'dh2',
               title: 'Indicadores',
               type: 'item',
-              url: '/D01/Ind2',
+              url: 'D01/Ind2',
               target: false
             }
           ]
@@ -135,14 +135,14 @@ export default {
               id: 'sh1',
               title: 'Descriptivo',
               type: 'item',
-              url: '/S01/Ind1',
+              url: 'S01/Ind1',
               target: false
             },
             {
               id: 'sh2',
               title: 'Indicadores',
               type: 'item',
-              url: '/S01/Ind2',
+              url: 'S01/Ind2',
               target: false
             }
           ]
@@ -157,14 +157,14 @@ export default {
               id: 'c1h1',
               title: 'Descriptivo',
               type: 'item',
-              url: '/C01-1/Ind1',
+              url: 'C01-1/Ind1',
               target: false
             },
             {
               id: 'c1h2',
               title: 'Indicadores',
               type: 'item',
-              url: '/C01-2/Ind2',
+              url: 'C01-2/Ind2',
               target: false
             }
           ]
@@ -179,14 +179,14 @@ export default {
               id: 'c2h1',
               title: 'Descriptivo',
               type: 'item',
-              url: '/C02-1/Ind1',
+              url: 'C02-1/Ind1',
               target: false
             },
             {
               id: 'c2h2',
               title: 'Indicadores',
               type: 'item',
-              url: '/C02-2/Ind2',
+              url: 'C02-2/Ind2',
               target: false
             }
           ]
@@ -201,14 +201,14 @@ export default {
               id: 'lh1',
               title: 'Descriptivo',
               type: 'item',
-              url: '/L01/Ind1',
+              url: 'L01/Ind1',
               target: false
             },
             {
               id: 'lh2',
               title: 'Indicadores',
               type: 'item',
-              url: '/L01/Ind2',
+              url: 'L01/Ind2',
               target: false
             }
           ]
@@ -225,14 +225,14 @@ export default {
           id: 'manual',
           title: 'Manual de uso',
           type: 'item',
-          url: '/manual-uso',
+          url: 'manual-uso',
           icon: icons['AutoStoriesOutlinedIcon']
         },
         {
           id: 'datos',
           title: 'Protección de Datos',
           type: 'item',
-          url: '/proteccion-datos',
+          url: 'proteccion-datos',
           icon: icons['SecurityOutlinedIcon']
         },
         {
