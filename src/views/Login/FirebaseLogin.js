@@ -135,16 +135,7 @@ const FirebaseLogin = ({ ...rest }) => {
             )}
 
             <Box mt={2}>
-              <Button
-                color="primary"
-                disabled={isSubmitting}
-                fullWidth
-                size="large"
-                type="submit"
-                variant="contained"
-                //component={RouterLink}
-                //to="/app/dashboard"
-              >
+              <Button color="primary" disabled={isSubmitting} fullWidth size="large" type="submit" variant="contained">
                 Iniciar Sesión
               </Button>
             </Box>
