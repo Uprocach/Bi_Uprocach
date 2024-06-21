@@ -15,7 +15,7 @@ const Indicador2 = () => {
         <Grid item xs={12}>
           <div style={{ width: '100%', height: '100vh' }}>
             <iframe
-              src="https://www.mapsdirections.info/crear-un-mapa-de-google/"
+              src="http://uprocach.espoch.edu.ec/public/dashboard/c1590478-1a79-4328-9ede-eb1cef65970f"
               allowFullScreen="true"
               style={{ width: '100%', height: '100%', border: 'none', borderRadius: '15px' }}
               title="Ejemplo"

@@ -2,7 +2,7 @@ import React from 'react';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
-import { Grid, Card, CardHeader, CardContent, Typography, Divider, CardMedia } from '@mui/material';
+import { Grid } from '@mui/material';
 
 //project import
 import ReportCard from './ReportCard';
@@ -11,10 +11,12 @@ import { gridSpacing } from 'config.js';
 // assets
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import TrendingDownIcon from '@mui/icons-material/TrendingDown';
-import MonetizationOnTwoTone from '@mui/icons-material/MonetizationOnTwoTone';
-import DescriptionTwoTone from '@mui/icons-material/DescriptionTwoTone';
-import ThumbUpAltTwoTone from '@mui/icons-material/ThumbUpAltTwoTone';
-import CalendarTodayTwoTone from '@mui/icons-material/CalendarTodayTwoTone';
+import AccountBalanceOutlinedIcon from '@mui/icons-material/AccountBalanceOutlined';
+import SavingsOutlinedIcon from '@mui/icons-material/SavingsOutlined';
+import Diversity3OutlinedIcon from '@mui/icons-material/Diversity3Outlined';
+import VerifiedOutlinedIcon from '@mui/icons-material/VerifiedOutlined';
+import PaidOutlinedIcon from '@mui/icons-material/PaidOutlined';
+import BalanceOutlinedIcon from '@mui/icons-material/BalanceOutlined';
 
 // ==============================|| DASHBOARD DEFAULT ||============================== //
 
@@ -24,120 +26,71 @@ const Default = () => {
   return (
     <Grid container spacing={gridSpacing}>
       <Grid item xs={12}>
-        <Grid container spacing={gridSpacing} justifyContent={'center'}>
-          <Grid item md={6} xs={12}>
-            <Card>
-              <CardHeader
-                title={
-                  <Typography component="div" className="card-header" style={{ textAlign: 'center' }}>
-                    UPROCACH
-                  </Typography>
-                }
-              />
-              <Divider />
-              <CardContent>
-                <Grid container spacing={gridSpacing}>
-                  <CardMedia
-                    component="img"
-                    image="https://images.squarespace-cdn.com/content/v1/5a58ee03dc2b4aa2c84fcf92/1540387886289-NH7S7QLM954A0TY1N2W2/Azure+FreshBI+Logo-01.png"
-                    alt="Logo"
-                    style={{ width: '50%', height: 'auto' }}
-                  />
-                </Grid>
-              </CardContent>
-              <Divider />
-              <Typography variant="body2" color="textSecondary" component="p" style={{ marginBottom: '16px', textAlign: 'center' }}>
-                Union de cooperativas
-              </Typography>
-            </Card>
-          </Grid>
-          <Grid item md={6} xs={12}>
-            <Card>
-              <CardHeader
-                title={
-                  <Typography component="div" className="card-header" style={{ textAlign: 'center' }}>
-                    Bi-DATA ESPOCH
-                  </Typography>
-                }
-              />
-              <Divider />
-              <CardContent>
-                <Grid container spacing={gridSpacing}>
-                  <CardMedia
-                    component="img"
-                    image="https://images.squarespace-cdn.com/content/v1/5a58ee03dc2b4aa2c84fcf92/1540387886289-NH7S7QLM954A0TY1N2W2/Azure+FreshBI+Logo-01.png"
-                    alt="Logo"
-                    style={{ width: '50%', height: 'auto' }}
-                  />
-                </Grid>
-              </CardContent>
-              <Divider />
-              <Typography variant="body2" color="textSecondary" component="p" style={{ marginBottom: '16px', textAlign: 'center' }}>
-                Grupo de investigación
-              </Typography>
-            </Card>
-          </Grid>
-        </Grid>
-      </Grid>
-      <Grid item xs={12}>
         <Grid container spacing={gridSpacing}>
-          <Grid item lg={4} sm={6} xs={12}>
+          <Grid item lg={4} md={6} sm={12} xs={12}>
             <ReportCard
               primary="Estados Financieros"
-              secondary="Descripcion"
+              secondary="Informes financieros preparados mensualmente que incluyen el balance general, 
+              estado de resultados y flujo de efectivo."
               color={theme.palette.warning.main}
               footerData="Grupo B11"
-              iconPrimary={MonetizationOnTwoTone}
               iconFooter={TrendingUpIcon}
+              iconPrimary={AccountBalanceOutlinedIcon}
             />
           </Grid>
-          <Grid item lg={4} sm={6} xs={12}>
+          <Grid item lg={4} md={6} sm={12} xs={12}>
             <ReportCard
               primary="Dépositos"
-              secondary="Descripcion"
+              secondary="Fondos que los clientes o socios han depositado en cuentas de la empresa o institución financiera, 
+              reflejando los recursos disponibles para la entidad."
               color={theme.palette.error.main}
               footerData="Grupo D01"
-              iconPrimary={CalendarTodayTwoTone}
+              iconPrimary={SavingsOutlinedIcon}
               iconFooter={TrendingDownIcon}
             />
           </Grid>
-          <Grid item lg={4} sm={6} xs={12}>
+          <Grid item lg={4} md={6} sm={12} xs={12}>
             <ReportCard
               primary="Socios"
-              secondary="Descripcion"
+              secondary="Individuos o entidades que poseen una participación en la empresa, 
+              ya sea como accionistas, miembros de una cooperativa, etc."
               color={theme.palette.success.main}
               footerData="Grupo S01"
-              iconPrimary={DescriptionTwoTone}
+              iconPrimary={Diversity3OutlinedIcon}
               iconFooter={TrendingUpIcon}
             />
           </Grid>
-          <Grid item lg={4} sm={6} xs={12}>
+          <Grid item lg={4} md={6} sm={12} xs={12}>
             <ReportCard
-              primary="Oper. concedidas"
-              secondary="Descripcion"
+              primary="Operaciones concedidas"
+              secondary="Transacciones o préstamos aprobados por la empresa, detallando el monto, 
+              términos y condiciones de cada operación otorgada."
               color={theme.palette.primary.main}
               footerData="Grupo C01"
-              iconPrimary={ThumbUpAltTwoTone}
+              iconPrimary={VerifiedOutlinedIcon}
               iconFooter={TrendingUpIcon}
             />
           </Grid>
-          <Grid item lg={4} sm={6} xs={12}>
+          <Grid item lg={4} md={6} sm={12} xs={12}>
             <ReportCard
               primary="Saldos de operaciones"
-              secondary="Descripción"
+              secondary=" El balance actual de las cuentas de operaciones, 
+              incluyendo tanto los montos adeudados por los clientes
+              como las obligaciones de la empresa."
               color={theme.palette.primary.main}
               footerData="Grupo C02"
-              iconPrimary={ThumbUpAltTwoTone}
+              iconPrimary={PaidOutlinedIcon}
               iconFooter={TrendingUpIcon}
             />
           </Grid>
-          <Grid item lg={4} sm={6} xs={12}>
+          <Grid item lg={4} md={6} sm={12} xs={12}>
             <ReportCard
               primary="Liquidez estructural"
-              secondary="Descripción"
+              secondary="Capacidad de la empresa para cumplir con sus obligaciones a corto y largo plazo, 
+              la disponibilidad de activos líquidos en relación con sus pasivos."
               color={theme.palette.primary.main}
               footerData="Grupo L01"
-              iconPrimary={ThumbUpAltTwoTone}
+              iconPrimary={BalanceOutlinedIcon}
               iconFooter={TrendingUpIcon}
             />
           </Grid>

@@ -16,7 +16,7 @@ const ReportCard = ({ primary, secondary, iconPrimary, color, footerData, iconFo
 
   return (
     <Card>
-      <CardContent>
+      <CardContent style={{ height: 'calc(100% - 50px)' }}>
         <Grid container justifyContent="space-between" alignItems="center">
           <Grid item>
             <Typography variant="h3" sx={{ color: color }}>
