@@ -17,6 +17,7 @@ import Diversity3OutlinedIcon from '@mui/icons-material/Diversity3Outlined';
 import VerifiedOutlinedIcon from '@mui/icons-material/VerifiedOutlined';
 import PaidOutlinedIcon from '@mui/icons-material/PaidOutlined';
 import BalanceOutlinedIcon from '@mui/icons-material/BalanceOutlined';
+//assets image
 
 // ==============================|| DASHBOARD DEFAULT ||============================== //
 
@@ -25,6 +26,20 @@ const Default = () => {
 
   return (
     <Grid container spacing={gridSpacing}>
+      <Grid item xs={12}>
+        <Grid container spacing={gridSpacing} justifyContent={'center'}>
+          <Grid item xs={12}>
+            <div style={{ width: '100%', height: '50vh' }}>
+              <iframe
+                src="https://uprocach.odoo.com/"
+                allowFullScreen="true"
+                style={{ width: '100%', height: '100%', border: 'none', borderRadius: '15px' }}
+                title="Ejemplo"
+              ></iframe>
+            </div>
+          </Grid>
+        </Grid>
+      </Grid>
       <Grid item xs={12}>
         <Grid container spacing={gridSpacing}>
           <Grid item lg={4} md={6} sm={12} xs={12}>
@@ -65,7 +80,7 @@ const Default = () => {
               primary="Operaciones concedidas"
               secondary="Transacciones o préstamos aprobados por la empresa, detallando el monto, 
               términos y condiciones de cada operación otorgada."
-              color={theme.palette.primary.main}
+              color={theme.palette.success.main}
               footerData="Grupo C01"
               iconPrimary={VerifiedOutlinedIcon}
               iconFooter={TrendingUpIcon}
@@ -88,7 +103,7 @@ const Default = () => {
               primary="Liquidez estructural"
               secondary="Capacidad de la empresa para cumplir con sus obligaciones a corto y largo plazo, 
               la disponibilidad de activos líquidos en relación con sus pasivos."
-              color={theme.palette.primary.main}
+              color={theme.palette.warning.main}
               footerData="Grupo L01"
               iconPrimary={BalanceOutlinedIcon}
               iconFooter={TrendingUpIcon}

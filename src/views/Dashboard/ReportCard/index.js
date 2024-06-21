@@ -19,16 +19,11 @@ const ReportCard = ({ primary, secondary, iconPrimary, color, footerData, iconFo
       <CardContent style={{ height: 'calc(100% - 50px)' }}>
         <Grid container justifyContent="space-between" alignItems="center">
           <Grid item>
-            <Typography variant="h3" sx={{ color: color }}>
-              {primary}
+            <Typography variant="h3" sx={{ color: color, display: 'flex', alignItems: 'center', gap: '30px' }}>
+              {primary} {primaryIcon}
             </Typography>
             <Typography variant="subtitle1" sx={{ marginTop: '.5rem' }}>
               {secondary}
-            </Typography>
-          </Grid>
-          <Grid item>
-            <Typography variant="h2" sx={{ color: color }}>
-              {primaryIcon}
             </Typography>
           </Grid>
         </Grid>
