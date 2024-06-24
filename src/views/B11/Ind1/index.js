@@ -1,29 +1,48 @@
 import React from 'react';
-
-// material-ui
 import { Grid } from '@mui/material';
-
-// project import
 import { gridSpacing } from 'config.js';
-
-// ==============================|| B11-Indicador1 ||============================== //
 
 const Indicador1 = () => {
   return (
-    <>
-      <Grid container spacing={gridSpacing}>
-        <Grid item xs={12}>
-          <div style={{ width: '100%', height: '100vh' }}>
-            <iframe
-              src="https://lookerstudio.google.com/embed/reporting/152f66b0-fa58-4666-accb-75f950a0fc84/page/p_1u3hnrhsfd"
-              allowFullScreen="true"
-              style={{ width: '100%', height: '100%', border: 'none', borderRadius: '15px' }}
-              title="Estados Financieros"
-            ></iframe>
-          </div>
-        </Grid>
+    <Grid container spacing={gridSpacing}>
+      <Grid item xs={12}>
+        <div
+          style={{
+            width: '100%',
+            height: '300vh', // Considera usar una altura más específica
+            overflow: 'hidden',
+            position: 'relative' // Clave para el truco del scroll
+          }}
+        >
+          <iframe
+            src="https://lookerstudio.google.com/embed/reporting/42c251ef-0e7a-4155-809f-ab893716dfd3/page/p_h3lb8xc8hd"
+            title="Estados Financieros"
+            width="100%"
+            height="100%"
+            style={{
+              border: 'none',
+              borderRadius: '15px',
+              position: 'absolute', // Permite el desplazamiento dentro del padre
+              top: 0,
+              left: 0
+            }}
+            sandbox="allow-scripts allow-same-origin" // Seguridad mejorada
+          />
+
+          {/* Capa opcional para una apariencia más fluida */}
+          <div
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              pointerEvents: 'none' // Permite hacer clic a través de la barra de desplazamiento de la página principal
+            }}
+          ></div>
+        </div>
       </Grid>
-    </>
+    </Grid>
   );
 };
 
