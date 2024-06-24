@@ -13,9 +13,9 @@ const Manual = () => {
     <>
       <Grid container spacing={gridSpacing}>
         <Grid item xs={12}>
-          <div style={{ width: '100%', height: '100vh' }}>
+          <div style={{ width: '100%', height: '58vh' }}>
             <iframe
-              src="https://sites.google.com/view/manual-usuario-biuprocach/inicio"
+              src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGJFiSfzQQ&#x2F;CFiC2RURSv8QM2N9zwQvow&#x2F;view?embed"
               allowFullScreen="true"
               style={{ width: '100%', height: '100%', border: 'none', borderRadius: '15px' }}
               title="Operaciones Concedidas"
