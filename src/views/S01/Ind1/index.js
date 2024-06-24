@@ -15,7 +15,7 @@ const Indicador1 = () => {
         <Grid item xs={12}>
           <div style={{ width: '100%', height: '100vh' }}>
             <iframe
-              src="https://app.powerbi.com/view?r=eyJrIjoiMGFmZjJjZTYtYmFiNi00YzFkLThhNmItMTg2MzRiY2UxZmM5IiwidCI6ImMwNWUxMWU1LTcwNmMtNGNlZi1iYTVlLTE4ZWVkYmYxMDAzNyJ9&amp;isMobile=true&amp;uid=9wjrw6"
+              src="https://lookerstudio.google.com/embed/reporting/8ad6dd53-d90d-4734-ba21-ddbc1f63456c/page/p_h3lb8xc8hd"
               allowFullScreen="true"
               style={{ width: '100%', height: '100%', border: 'none', borderRadius: '15px' }}
               title="Ejemplo"

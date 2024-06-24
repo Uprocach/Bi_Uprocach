@@ -13,9 +13,9 @@ const Indicador1 = () => {
     <>
       <Grid container spacing={gridSpacing}>
         <Grid item xs={12}>
-          <div style={{ width: '100%', height: '175vh' }}>
+          <div style={{ width: '100%', height: '300vh' }}>
             <iframe
-              src="https://lookerstudio.google.com/embed/reporting/15d0b0b4-fd9f-471a-9b5f-e834f17cedfb/page/p_1u3hnrhsfd"
+              src="https://lookerstudio.google.com/embed/reporting/925f5b53-ad22-4dd3-9448-1795280a6163/page/p_h3lb8xc8hd"
               allowFullScreen="true"
               style={{ width: '100%', height: '100%', border: 'none', borderRadius: '15px' }}
               title="Operaciones Concedidas"
