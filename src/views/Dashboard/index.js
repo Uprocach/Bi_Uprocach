@@ -29,7 +29,7 @@ const Default = () => {
       <Grid item xs={12}>
         <Grid container spacing={gridSpacing} justifyContent={'center'}>
           <Grid item xs={12}>
-            <div style={{ width: '100%', height: '50vh' }}>
+            <div style={{ width: '100%', height: '56vh' }}>
               <iframe
                 src="https://uprocach.odoo.com/"
                 allowFullScreen="true"
