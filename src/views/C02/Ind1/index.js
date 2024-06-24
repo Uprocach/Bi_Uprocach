@@ -13,7 +13,7 @@ const Indicador1 = () => {
     <>
       <Grid container spacing={gridSpacing}>
         <Grid item xs={12}>
-          <div style={{ width: '100%', height: '100vh' }}>
+          <div style={{ width: '100%', height: '300vh' }}>
             <iframe
               src="https://lookerstudio.google.com/embed/reporting/7b021703-207a-4a5d-9de1-6b5ec2678de1/page/p_1u3hnrhsfd"
               allowFullScreen="true"

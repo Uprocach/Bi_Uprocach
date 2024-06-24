@@ -13,7 +13,14 @@ const Manual = () => {
     <>
       <Grid container spacing={gridSpacing}>
         <Grid item xs={12}>
-          <div style={{ width: '100%', height: '100vh' }}> Embebido del Manual de usuario </div>
+          <div style={{ width: '100%', height: '100vh' }}>
+            <iframe
+              src="https://sites.google.com/view/manual-usuario-biuprocach/inicio"
+              allowFullScreen="true"
+              style={{ width: '100%', height: '100%', border: 'none', borderRadius: '15px' }}
+              title="Operaciones Concedidas"
+            ></iframe>
+          </div>
         </Grid>
       </Grid>
     </>
