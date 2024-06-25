@@ -45,8 +45,8 @@ const Default = () => {
           <Grid item lg={4} md={6} sm={12} xs={12}>
             <ReportCard
               primary="Estados Financieros"
-              secondary="Informes financieros preparados mensualmente que incluyen el balance general, 
-              estado de resultados y flujo de efectivo."
+              secondary="Informes financieros detallados preparados mensualmente que incluyen el balance general, estado de resultados, 
+              flujo de efectivo y análisis."
               color={theme.palette.warning.main}
               footerData="Grupo B11"
               iconFooter={TrendingUpIcon}
