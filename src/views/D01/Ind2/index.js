@@ -13,9 +13,9 @@ const Indicador2 = () => {
     <>
       <Grid container spacing={gridSpacing}>
         <Grid item xs={12}>
-          <div style={{ width: '100%', height: '100vh' }}>
+          <div style={{ width: '100%', height: '88vh' }}>
             <iframe
-              src="https://app.powerbi.com/view?r=eyJrIjoiMTBkMzdjNmQtZDRhZS00NjNlLWEwYTEtNTNiNjQxNTQ2NDhkIiwidCI6ImMwNWUxMWU1LTcwNmMtNGNlZi1iYTVlLTE4ZWVkYmYxMDAzNyJ9&amp;isMobile=true&amp;uid=s0qzu7"
+              src="https://lookerstudio.google.com/embed/reporting/42c251ef-0e7a-4155-809f-ab893716dfd3/page/p_vn2ym8elid"
               allowFullScreen="true"
               style={{ width: '100%', height: '100%', border: 'none', borderRadius: '15px' }}
               title="Ejemplo"
