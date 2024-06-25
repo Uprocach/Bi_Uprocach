@@ -3,7 +3,22 @@ import { Link as RouterLink } from 'react-router-dom';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
-import { Fade, Button, ClickAwayListener, Paper, Popper, List, ListItemText, ListItemIcon, ListItemButton } from '@mui/material';
+import {
+  Fade,
+  Button,
+  ClickAwayListener,
+  Paper,
+  Popper,
+  List,
+  ListItemText,
+  ListItemIcon,
+  ListItemButton,
+  Dialog,
+  DialogContent,
+  DialogContentText,
+  DialogActions,
+  DialogTitle
+} from '@mui/material';
 
 // assets
 import AccountCircleTwoToneIcon from '@mui/icons-material/AccountCircleTwoTone';
@@ -17,10 +32,14 @@ const ProfileSection = () => {
 
   const [selectedIndex, setSelectedIndex] = React.useState(1);
   const [open, setOpen] = React.useState(false);
+  const [dialogOpen, setDialogOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
 
   const handleListItemClick = (event, index) => {
     setSelectedIndex(index);
+    if (index === 1) {
+      setDialogOpen(true);
+    }
   };
 
   const handleToggle = () => {
@@ -33,6 +52,10 @@ const ProfileSection = () => {
     }
 
     setOpen(false);
+  };
+
+  const handleDialogClose = () => {
+    setDialogOpen(false);
   };
 
   const prevOpen = React.useRef(open);
@@ -93,12 +116,39 @@ const ProfileSection = () => {
                     borderRadius: '10px'
                   }}
                 >
-                  <ListItemButton selected={selectedIndex === 1} onClick={(event) => handleListItemClick(event, 0)}>
+                  <ListItemButton selected={selectedIndex === 0} onClick={(event) => handleListItemClick(event, 1)}>
                     <ListItemIcon>
                       <HelpOutlineOutlined />
                     </ListItemIcon>
                     <ListItemText primary="Acerca de..." />
                   </ListItemButton>
+                  <Dialog
+                    open={dialogOpen}
+                    onClose={handleDialogClose}
+                    aria-labelledby="alert-dialog-title"
+                    aria-describedby="alert-dialog-description"
+                  >
+                    <DialogTitle style={{ display: 'flex', justifyContent: 'center' }} id="alert-dialog-title">
+                      {'ESPOCH-UPROCACH'}
+                    </DialogTitle>
+                    <DialogContent>
+                      <img
+                        src={require('../../../../assets/images/login.png')}
+                        alt="login"
+                        style={{ width: '400px', display: 'block', margin: '0 auto' }}
+                      />
+                      <DialogContentText id="alert-dialog-description">
+                        Fortalecimiento de la Gestión de la Union Provincial de Cooperativas de Ahorro y Crédito de Chimborazo UPROCACH a
+                        través de un Modelo de Gestión Integral y Plan de Marketing Digital que permita innovar, desarrollar un software
+                        financiero y una pagina web para mejorar el crecimiento orgánico de las cooperativas en territorio de su influencia
+                      </DialogContentText>
+                    </DialogContent>
+                    <DialogActions>
+                      <Button onClick={handleDialogClose} color="primary">
+                        Cerrar
+                      </Button>
+                    </DialogActions>
+                  </Dialog>
                   <ListItemButton
                     selected={selectedIndex === 0}
                     onClick={(event) => handleListItemClick(event, 0)}
