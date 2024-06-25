@@ -13,12 +13,11 @@ const Indicador2 = () => {
     <>
       <Grid container spacing={gridSpacing}>
         <Grid item xs={12}>
-          <div style={{ width: '100%', height: '89vh', overflow: 'hidden' }}>
+          <div style={{ width: '100%', height: '100vh', overflow: 'hidden' }}>
             <iframe
-              src="https://lookerstudio.google.com/embed/reporting/42c251ef-0e7a-4155-809f-ab893716dfd3/page/p_h3lb8xc8hd"
-              allowFullScreen="true"
-              style={{ width: '100%', height: '100%', border: 'none', borderRadius: '15px' }}
-              title="Ejemplo"
+              src="https://lookerstudio.google.com/embed/reporting/42c251ef-0e7a-4155-809f-ab893716dfd3/page/p_vn2ym8elid"
+              style={{ width: '100%', height: '80vh', border: 'none', borderRadius: '15px' }}
+              title="Data Sets"
             ></iframe>
           </div>
         </Grid>
