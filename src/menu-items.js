@@ -89,14 +89,14 @@ export default {
           children: [
             {
               id: 'bh1',
-              title: 'Descriptivo',
+              title: 'Reportes',
               type: 'item',
               url: 'B11/Ind1',
               target: false
             },
             {
               id: 'bh2',
-              title: 'Indicadores',
+              title: 'Data Sets',
               type: 'item',
               url: 'B11/Ind2',
               target: false
@@ -111,14 +111,14 @@ export default {
           children: [
             {
               id: 'dh1',
-              title: 'Descriptivo',
+              title: 'Reportes',
               type: 'item',
               url: 'D01/Ind1',
               target: false
             },
             {
               id: 'dh2',
-              title: 'Indicadores',
+              title: 'Data Sets',
               type: 'item',
               url: 'D01/Ind2',
               target: false
@@ -133,14 +133,14 @@ export default {
           children: [
             {
               id: 'sh1',
-              title: 'Descriptivo',
+              title: 'Reportes',
               type: 'item',
               url: 'S01/Ind1',
               target: false
             },
             {
               id: 'sh2',
-              title: 'Indicadores',
+              title: 'Data Sets',
               type: 'item',
               url: 'S01/Ind2',
               target: false
@@ -155,14 +155,14 @@ export default {
           children: [
             {
               id: 'c1h1',
-              title: 'Descriptivo',
+              title: 'Reportes',
               type: 'item',
               url: 'C01-1/Ind1',
               target: false
             },
             {
               id: 'c1h2',
-              title: 'Indicadores',
+              title: 'Data Sets',
               type: 'item',
               url: 'C01-2/Ind2',
               target: false
@@ -177,14 +177,14 @@ export default {
           children: [
             {
               id: 'c2h1',
-              title: 'Descriptivo',
+              title: 'Reportes',
               type: 'item',
               url: 'C02-1/Ind1',
               target: false
             },
             {
               id: 'c2h2',
-              title: 'Indicadores',
+              title: 'Data Sets',
               type: 'item',
               url: 'C02-2/Ind2',
               target: false
@@ -199,14 +199,14 @@ export default {
           children: [
             {
               id: 'lh1',
-              title: 'Descriptivo',
+              title: 'Reportes',
               type: 'item',
               url: 'L01/Ind1',
               target: false
             },
             {
               id: 'lh2',
-              title: 'Indicadores',
+              title: 'Data Sets',
               type: 'item',
               url: 'L01/Ind2',
               target: false
